@@ -21,7 +21,7 @@
     }
     return $(this);
   };
-  
+
   /** keyup event action */
   $.fn.livefilter.onKey = function(opts) {
     var rv = function() {
@@ -39,7 +39,7 @@
     }
     return rv;
   };
-  
+
   /** Delay execution of too frequent tasks*/
   $.fn.livefilter.debounce = function(func, threshold) {
     var timeout;
@@ -53,24 +53,25 @@
       timeout = setTimeout(delayed, threshold || 100);
     };
   };
-  
+
   /** Case insensitive :contains jQuery pseudo selector */
   $.expr[":"].icontains = function(obj, index, meta, stack) {
     return (obj.textContent || obj.innerText || jQuery(obj).text() || "").toLowerCase().indexOf(meta[3].toLowerCase()) >= 0;
   };
-  
+
   var log=function(){
     if (typeof console!=='undefined' && console.log){
       console.log(Array.prototype.slice.call(arguments).join(', '));
     }
   };
-  
+
   /** Plugin global defaults */
   $.fn.livefilter.defaults = {
     selector: "tbody tr",
+    debounce: 500,
+
     hiddenClass: "lf-hidden",
     showFn: "show",
-    hideFn: "hide",
-    debounce: 500
+    hideFn: "hide"
   };
 })(jQuery);

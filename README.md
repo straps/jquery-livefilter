@@ -5,10 +5,11 @@
 
 ## Usage
 
-`$('input').livefilter('tbody tr');`
+`$('input').livefilter({selector:'tbody tr'});`
 
 ## Examples
 
+(Multiple Selector on JSFiddle)[http://jsfiddle.net/straps/Qqz6U/]
 
 ## License 
 
