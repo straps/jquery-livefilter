@@ -5,8 +5,9 @@
 
 ## Usage
 
+`$('input').livefilter('tbody tr');`
 
-## Testing
+## Examples
 
 
 ## License 
