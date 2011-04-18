@@ -9,7 +9,7 @@
 
 ## Examples
 
-(Multiple Selector on JSFiddle)[http://jsfiddle.net/straps/Qqz6U/]
+[Multiple Selector on JSFiddle](http://jsfiddle.net/straps/Qqz6U/)
 
 ## License 
 
